@@ -1,0 +1,76 @@
+{
+    "editor.fontFamily": "IBM Plex Mono",
+    "editor.fontSize": 16,
+    "editor.fontLigatures": false,
+    "editor.cursorBlinking": "solid",
+    "editor.wordWrap": "off",
+    "[plaintext]": {
+      "editor.wordWrap": "on"
+    },
+    "editor.minimap.enabled": false,
+    "editor.minimap.renderCharacters": false,
+    "editor.renderWhitespace": "selection",
+    "editor.suggestSelection": "recentlyUsedByPrefix",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "modifications",
+    "explorer.openEditors.visible": 0,
+    "workbench.editor.tabSizing": "shrink",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "editor.codeLens": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "vim.showcmd": true,
+    "vim.ignorecase": true,
+    "vim.smartcase": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.leader": ",",
+    "vim.normalModeKeyBindingsNonRecursive": [
+      {
+        "before": ["<space>"],
+        "after": [":"]
+      },
+      {
+        "before": ["Z", "Z"],
+        "commands": [":wq"]
+      },
+      {
+        "before": ["/"],
+        "commands": ["actions.find"]
+      },
+      {
+        "before": ["<leader>", "f"],
+        "commands": ["editor.action.formatDocument"]
+      },
+      {
+        "before": ["<leader>", "r"],
+        "commands": ["workbench.action.showCommands"]
+      },
+      {
+        "before": ["<leader>", "t"],
+        "commands": ["workbench.action.quickOpen"]
+      }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+      {
+        "before": ["<space>"],
+        "after": [":"]
+      },
+      {
+        "before": ["/"],
+        "commands": ["actions.find"]
+      },
+      {
+        "before": ["<leader>", "f"],
+        "commands": ["editor.action.formatDocument"]
+      },
+      {
+        "before": ["<leader>", "r"],
+        "commands": ["workbench.action.showCommands"]
+      },
+      {
+        "before": ["<leader>", "t"],
+        "commands": ["workbench.action.quickOpen"]
+      }
+    ]
+  }
+  
