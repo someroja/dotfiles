@@ -1,0 +1,27 @@
+"The usual suspects: incremental search with highlight, ignore case when searching (except when using capital letters)
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+
+"Use system clipboard
+set clipboard+=unnamed
+set clipboard+=ideaput
+
+"Emulate vim-surround
+set surround
+set ideajoin
+
+let mapleader=","
+
+nnoremap <space> :
+vnoremap <space> :
+nnoremap <leader><space> :nohlsearch<CR>
+
+"IDE commands
+nnoremap <leader>/ :action Find<CR>
+nnoremap <leader>f :action ReformatCode<CR>
+nnoremap <leader>r :action Refactorings.QuickListPopupAction<CR>
+nnoremap <leader>t :action SearchEverywhere<CR>
+nnoremap <leader>c :action CommentByLineComment<CR>
+nnoremap <leader>b :action ToggleLineBreakpoint<CR>
