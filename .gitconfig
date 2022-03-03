@@ -1,0 +1,58 @@
+[user]
+	name = Osmo Someroja
+	email = osmo@someroja.com
+[core]
+	autocrlf = false
+[init]
+	defaultBranch = main
+[push]
+	default = simple
+	followTags = true
+[alias]
+	aa = add --all
+	aliases = config --get-regexp ^alias
+	amend = commit --amend --no-edit
+	b = branch
+	ba = branch --all
+	bd = branch --delete
+	br = branch --remote
+	cb = checkout -b
+	ci = commit
+	clean-all = clean -fdx
+	cm = commit -m
+	cma = !git add --all && git commit -m
+	co = checkout
+	d = diff
+	dc = diff --cached
+	dh = diff HEAD
+	fixup = commit --fixup
+	fixup-apply = rebase -i --autosquash
+	history = log --follow --patch
+	l = log --oneline --decorate --graph
+	la = log --oneline --decorate --graph --all
+	lf = log --oneline --decorate --graph --numstat
+	lp = log --patch
+	mff = merge --ff-only @{u}
+	pl = pull
+	plr = pull --rebase
+	ps = push
+	rb = rebase
+	rbi = rebase -i
+	remotes = remote -v
+	s = status --short --branch
+	stash-all = stash save --include-untracked
+	tags = tag -l
+	undo-last-commit = reset --soft HEAD^
+	up = !git fetch --all --tags --prune && git merge --ff-only @{u}
+	unstage = reset HEAD
+[mergetool "smerge"]
+	cmd = smerge mergetool "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"
+	trustexitcode = true
+[mergetool]
+	prompt = false
+[merge]
+	tool = smerge
+[rerere]
+	enabled = true
+[include]
+	path = ~/.gitconfig.local
