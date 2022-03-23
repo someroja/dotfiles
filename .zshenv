@@ -1,7 +1,7 @@
 # Path
-# Add /usr/local/sbin in case some homebrew formulae puts executables there
 typeset -U path
-path=(/usr/local/sbin $path)
+# Add /usr/local/sbin in case some homebrew formulae puts executables there
+path+=(/usr/local/sbin)
 
 # Set locale to a nice mishmash of English and Finnish
 export LANG="en_US.UTF-8"
