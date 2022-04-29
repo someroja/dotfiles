@@ -17,8 +17,9 @@ fi
 
 zplug load
 
-# Managing dotfiles
+# Managing dotfiles and env
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+eval "$(direnv hook zsh)"
 
 # Other aliases
 alias ~="cd ~"
