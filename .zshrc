@@ -1,4 +1,11 @@
 # Completion
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi
 autoload -Uz compinit && compinit
 zstyle ':completion:*' menu select
 
