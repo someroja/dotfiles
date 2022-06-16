@@ -1,8 +1,3 @@
-# Path
-typeset -U path
-# Add /usr/local/sbin in case some homebrew formulae puts executables there
-path+=(/usr/local/sbin)
-
 # Set locale to a nice mishmash of English and Finnish
 export LANG="en_US.UTF-8"
 export LC_CTYPE="fi_FI.UTF-8"
