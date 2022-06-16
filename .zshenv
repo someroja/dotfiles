@@ -1,11 +1,5 @@
-# Set locale to a nice mishmash of English and Finnish
 export LANG="en_US.UTF-8"
-export LC_CTYPE="fi_FI.UTF-8"
-export LC_MESSAGES="en_US.UTF-8"
-export LC_MONETARY="fi_FI.UTF-8"
-export LC_NUMERIC="fi_FI.UTF-8"
-export LC_TIME="fi_FI.UTF-8"
-export LC_COLLATE="C"
+export LC_ALL="fi_FI.UTF-8"
 
 # Load local settings if we have them
 [ -f ~/.zshenv.local ] && . ~/.zshenv.local
