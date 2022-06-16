@@ -12,13 +12,5 @@ export LC_NUMERIC="fi_FI.UTF-8"
 export LC_TIME="fi_FI.UTF-8"
 export LC_COLLATE="C"
 
-# zsh-pure
-export PURE_PROMPT_SYMBOL="$"
-
-# zsh-nvm
-export NVM_DIR="$HOME/.nvm"
-export NVM_COMPLETION=true
-export NVM_LAZY_LOAD=true
-
 # Load local settings if we have them
 [ -f ~/.zshenv.local ] && . ~/.zshenv.local
