@@ -6,25 +6,58 @@ set smartcase
 
 "Use system clipboard
 set clipboard+=unnamed
+
+"Enable native IDEA paste action for put operations
 set clipboard+=ideaput
 
-"Emulate vim-surround
-set surround
+"Perfom join via IDEA
 set ideajoin
 
-let mapleader=","
+"SPACE is the new leader!
+nnoremap <Space> <Nop>
+let mapleader=" "
 
-nnoremap <space> :
-vnoremap <space> :
-nnoremap <leader><space> :nohlsearch<CR>
+"evil-escape
+imap jk <Esc>
 
-"IDE commands
-nnoremap <leader>/ :action Find<CR>
-nnoremap <leader>f :action ReformatCode<CR>
-nnoremap <leader>r :action Refactorings.QuickListPopupAction<CR>
-nnoremap <leader>t :action SearchEverywhere<CR>
-nnoremap <leader>c :action CommentByLineComment<CR>
-nnoremap <leader>b :action ToggleLineBreakpoint<CR>
+"IDE commands, inspired by Doom Emacs
+map <Leader>: :
+map <Leader>. <Action>(SearchEverywhere)
+map <Leader>/ <Action>(FindInPath)
+map <Leader><lt> <Action>(Switcher)
+
+"buffer
+noremap <Leader>bs :<C-u>w<CR>
+noremap <Leader>bS :<C-u>wa<CR>
+map <Leader>bb <Action>(RecentFiles)
+map <Leader>bd <Action>(CloseContent)
+map <Leader>bk <Action>(CloseContent)
+map <Leader>bK <Action>(CloseAllEditors)
+map <Leader>bO <Action>(CloseAllEditorsButActive)
+
+"code
+noremap <Leader>cd gd
+map <Leader>cD <Action>(ShowUsages)
+map <Leader>ci <Action>(GotoImplementation)
+map <Leader>ct <Action>(GotoTypeDeclaration)
+map <leader>cf <Action>(ReformatCode)
+map <Leader>ca <Action>(ShowIntentionActions)
+map <Leader>cj <Action>(SearchEverywhere)
+map <Leader>c/ <Action>(CommentByLineComment)
+map <Leader>cb <Action>(ToggleLineBreakpoint)
+
+"file
+noremap <Leader>fs :<C-u>w<CR>
+map <Leader>ff <Action>(SearchEverywhere)
+map <Leader>fr <Action>(RecentFiles)
+map <Leader>fy <Action>(CopyAbsolutePath)
+map <Leader>fR <Action>(RefactoringMenu)
+"map <Leader>fR <Action>(Refactorings.QuickListPopupAction)
+
+"search
+map <Leader>sb <Action>(Find)
+map <Leader>ss <Action>(Find)
+map <Leader>sp <Action>(FindInPath)
 
 "Treat common IntelliJ shortcuts as Vim commands
 sethandler <C-2> a:vim
