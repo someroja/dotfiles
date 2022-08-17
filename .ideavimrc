@@ -7,7 +7,7 @@ set ignorecase
 set smartcase
 
 " Use system clipboard
-set clipboard+=unnamed
+set clipboard^=unnamed,unnamedplus
 
 " <Space> is the new leader!
 nnoremap <Space> <Nop>
