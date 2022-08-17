@@ -1,6 +1,6 @@
 " The usual suspects:
-" - incremental search with highlight
-" - ignore case when searching (except when using capital letters)
+" incremental search with highlight
+" ignore case when searching (except when using capital letters)
 set incsearch
 set hlsearch
 set ignorecase
@@ -37,7 +37,7 @@ map <Leader>bK <Action>(CloseAllEditors)
 map <Leader>bO <Action>(CloseAllEditorsButActive)
 
 " code
-noremap <Leader>cd gd
+map <Leader>cd <Action>(GotoDeclaration)
 map <Leader>cD <Action>(ShowUsages)
 map <Leader>ci <Action>(GotoImplementation)
 map <Leader>ct <Action>(GotoTypeDeclaration)
