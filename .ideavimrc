@@ -1,41 +1,42 @@
-"The usual suspects: incremental search with highlight, ignore case when searching (except when using capital letters)
+" The usual suspects:
+" - incremental search with highlight
+" - ignore case when searching (except when using capital letters)
 set incsearch
 set hlsearch
 set ignorecase
 set smartcase
 
-"Use system clipboard
+" Use system clipboard
 set clipboard+=unnamed
 
-"Enable native IDEA paste action for put operations
-set clipboard+=ideaput
-
-"Perfom join via IDEA
-set ideajoin
-
-"SPACE is the new leader!
+" <Space> is the new leader!
 nnoremap <Space> <Nop>
 let mapleader=" "
 
-"evil-escape
+" evil-escape
 imap jk <Esc>
 
-"IDE commands, inspired by Doom Emacs
-map <Leader>: :
-map <Leader>. <Action>(SearchEverywhere)
-map <Leader>/ <Action>(FindInPath)
-map <Leader><lt> <Action>(Switcher)
+" Perfom join via IDE
+set ideajoin
 
-"buffer
-noremap <Leader>bs :<C-u>w<CR>
-noremap <Leader>bS :<C-u>wa<CR>
+" IDE commands, inspired by Doom Emacs
+map <Leader>: :
+map <Leader><Space> <Action>(SearchEverywhere)
+map <Leader>. <Action>(GotoFile)
+map <Leader>, <Action>(Switcher)
+map <Leader>/ <Action>(FindInPath)
+map <Leader>x <Action>(NewScratchBuffer)
+
+" buffer
+map <Leader>bs <Action>(SaveDocument)
+map <Leader>bS <Action>(SaveAll)
 map <Leader>bb <Action>(RecentFiles)
 map <Leader>bd <Action>(CloseContent)
 map <Leader>bk <Action>(CloseContent)
 map <Leader>bK <Action>(CloseAllEditors)
 map <Leader>bO <Action>(CloseAllEditorsButActive)
 
-"code
+" code
 noremap <Leader>cd gd
 map <Leader>cD <Action>(ShowUsages)
 map <Leader>ci <Action>(GotoImplementation)
@@ -46,20 +47,19 @@ map <Leader>cj <Action>(SearchEverywhere)
 map <Leader>c/ <Action>(CommentByLineComment)
 map <Leader>cb <Action>(ToggleLineBreakpoint)
 
-"file
-noremap <Leader>fs :<C-u>w<CR>
-map <Leader>ff <Action>(SearchEverywhere)
+" file
+map <Leader>fs <Action>(SaveDocument)
+map <Leader>ff <Action>(GotoFile)
 map <Leader>fr <Action>(RecentFiles)
 map <Leader>fy <Action>(CopyAbsolutePath)
 map <Leader>fR <Action>(RefactoringMenu)
-"map <Leader>fR <Action>(Refactorings.QuickListPopupAction)
 
-"search
+" search
 map <Leader>sb <Action>(Find)
 map <Leader>ss <Action>(Find)
 map <Leader>sp <Action>(FindInPath)
 
-"Treat common IntelliJ shortcuts as Vim commands
+" Treat common IntelliJ shortcuts as Vim commands
 sethandler <C-2> a:vim
 sethandler <C-S-2> a:vim
 sethandler <C-6> a:vim
