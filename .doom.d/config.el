@@ -24,4 +24,4 @@
 ;; wasn't installed correctly. Font issues are rarely Doom issues!
 
 ; Load local config if we have it
-(load! "config.local" doom-private-dir t)
+(load! "config.local" doom-user-dir t)
