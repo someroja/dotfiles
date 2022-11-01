@@ -16,12 +16,9 @@
   "editor.codeLens": false,
   "explorer.openEditors.visible": 0,
   "workbench.editor.tabSizing": "shrink",
-  "[javascript][javascriptreact][typescript][typescriptreact][html][css][scss][less][json][graphql][markdown]": {
+  "[javascript][javascriptreact][typescript][typescriptreact][html][css][scss][less][json][jsonc][graphql][markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "vscode-neovim.neovimExecutablePaths.darwin": "/opt/local/bin/nvim",
-  "vscode-neovim.mouseSelectionStartVisualMode": false,
+  "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
+  "vscode-neovim.mouseSelectionStartVisualMode": false
 }
