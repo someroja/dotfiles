@@ -2,6 +2,7 @@
   "editor.fontFamily": "IBM Plex Mono",
   "editor.fontSize": 18,
   "terminal.integrated.fontSize": 16,
+  "debug.console.fontSize": 16,
   "editor.fontLigatures": false,
   "editor.cursorBlinking": "solid",
   "editor.wordWrap": "off",
@@ -17,6 +18,9 @@
   "editor.codeLens": false,
   "explorer.openEditors.visible": 0,
   "workbench.editor.tabSizing": "shrink",
+  "files.exclude": {
+    "**/node_modules": true
+  },
   "[javascript][javascriptreact][typescript][typescriptreact][html][css][scss][less][json][jsonc][graphql][markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
