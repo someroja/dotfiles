@@ -50,224 +50,76 @@
       "command": "workbench.action.quickOpen"
     },
     {
-      "key": ".",
-      "name": "Quick open",
-      "type": "command",
-      "command": "workbench.action.quickOpen"
-    },
-    {
       "key": ",",
-      "name": "Quick open",
+      "name": "Commands",
       "type": "command",
-      "command": "workbench.action.quickOpen"
+      "command": "workbench.action.showCommands"
     },
     {
-      "key": "/",
-      "name": "Find in files",
+      "key": ".",
+      "name": "Context menu",
       "type": "command",
-      "command": "workbench.action.findInFiles"
-    },
-    {
-      "key": "x",
-      "name": "New scratch buffer",
-      "type": "command",
-      "command": "workbench.action.files.newUntitledFile"
-    },
-    {
-      "key": "0",
-      "name": "Focus on files explorer",
-      "type": "command",
-      "command": "workbench.files.action.focusFilesExplorer"
-    },
-    {
-      "key": "1",
-      "name": "Focus on 1st editor group",
-      "type": "command",
-      "command": "workbench.action.focusFirstEditorGroup"
-    },
-    {
-      "key": "2",
-      "name": "Focus on 2nd editor group",
-      "type": "command",
-      "command": "workbench.action.focusSecondEditorGroup"
-    },
-    {
-      "key": "3",
-      "name": "Focus on 3rd editor group",
-      "type": "command",
-      "command": "workbench.action.focusThirdEditorGroup"
-    },
-    {
-      "key": "b",
-      "name": "Buffer",
-      "type": "bindings",
-      "bindings": [
-        {
-          "key": "s",
-          "name": "Save",
-          "type": "command",
-          "command": "workbench.action.files.save"
-        },
-        {
-          "key": "S",
-          "name": "Save all",
-          "type": "command",
-          "command": "workbench.action.files.saveAll"
-        },
-        {
-          "key": "b",
-          "name": "Quick open",
-          "type": "command",
-          "command": "workbench.action.quickOpen"
-        },
-        {
-          "key": "d",
-          "name": "Close active editor",
-          "type": "command",
-          "command": "workbench.action.closeActiveEditor"
-        },
-        {
-          "key": "k",
-          "name": "Close active editor",
-          "type": "command",
-          "command": "workbench.action.closeActiveEditor"
-        },
-        {
-          "key": "K",
-          "name": "Close editors in group",
-          "type": "command",
-          "command": "workbench.action.closeEditorsInGroup"
-        },
-        {
-          "key": "o",
-          "name": "Close other editors",
-          "type": "command",
-          "command": "workbench.action.closeOtherEditors"
-        }
-      ]
-    },
-    {
-      "key": "f",
-      "name": "File",
-      "type": "bindings",
-      "bindings": [
-        {
-          "key": "s",
-          "name": "Save",
-          "type": "command",
-          "command": "workbench.action.files.save"
-        },
-        {
-          "key": "S",
-          "name": "Save all",
-          "type": "command",
-          "command": "workbench.action.files.saveAll"
-        },
-        {
-          "key": "f",
-          "name": "Quick open",
-          "type": "command",
-          "command": "workbench.action.quickOpen"
-        },
-        {
-          "key": "r",
-          "name": "Quick open",
-          "type": "command",
-          "command": "workbench.action.quickOpen"
-        },
-        {
-          "key": "y",
-          "name": "Yank file path",
-          "type": "command",
-          "command": "copyFilePath"
-        }
-      ]
+      "command": "editor.action.showContextMenu"
     },
     {
       "key": "s",
       "name": "Search",
-      "type": "bindings",
-      "bindings": [
-        {
-          "key": "b",
-          "name": "Find",
-          "type": "command",
-          "command": "actions.find"
-        },
-        {
-          "key": "s",
-          "name": "Find",
-          "type": "command",
-          "command": "actions.find"
-        },
-        {
-          "key": "p",
-          "name": "Find in files",
-          "type": "command",
-          "command": "workbench.action.findInFiles"
-        }
-      ]
+      "type": "command",
+      "command": "workbench.action.findInFiles"
     },
     {
-      "key": "c",
-      "name": "Code",
-      "type": "bindings",
-      "bindings": [
-        {
-          "key": "d",
-          "name": "Reveal definition",
-          "type": "command",
-          "command": "editor.action.revealDefinition"
-        },
-        {
-          "key": "D",
-          "name": "Go to references",
-          "type": "command",
-          "command": "editor.action.goToReferences"
-        },
-        {
-          "key": "i",
-          "name": "Go to implementation",
-          "type": "command",
-          "command": "editor.action.goToImplementation"
-        },
-        {
-          "key": "t",
-          "name": "Go to type definition",
-          "type": "command",
-          "command": "editor.action.goToTypeDefinition"
-        },
-        {
-          "key": "f",
-          "name": "Format document",
-          "type": "command",
-          "command": "editor.action.formatDocument"
-        },
-        {
-          "key": "r",
-          "name": "Refactor",
-          "type": "command",
-          "command": "editor.action.refactor"
-        },
-        {
-          "key": "a",
-          "name": "Show commands",
-          "type": "command",
-          "command": "workbench.action.showCommands"
-        },
-        {
-          "key": "/",
-          "name": "Toggle line comment",
-          "type": "command",
-          "command": "editor.action.commentLine"
-        },
-        {
-          "key": "b",
-          "name": "Toggle breakpoint",
-          "type": "command",
-          "command": "editor.debug.action.toggleBreakpoint"
-        }
-      ]
+      "key": "d",
+      "name": "Go to definition",
+      "type": "command",
+      "command": "editor.action.revealDefinition"
+    },
+    {
+      "key": "D",
+      "name": "Go to references",
+      "type": "command",
+      "command": "editor.action.goToReferences"
+    },
+    {
+      "key": "i",
+      "name": "Go to implementation",
+      "type": "command",
+      "command": "editor.action.goToImplementation"
+    },
+    {
+      "key": "t",
+      "name": "Go to type definition",
+      "type": "command",
+      "command": "editor.action.goToTypeDefinition"
+    },
+    {
+      "key": "f",
+      "name": "Format document",
+      "type": "command",
+      "command": "editor.action.formatDocument"
+    },
+    {
+      "key": "o",
+      "name": "Organize imports",
+      "type": "command",
+      "command": "editor.action.organizeImports"
+    },
+    {
+      "key": "r",
+      "name": "Refactor",
+      "type": "command",
+      "command": "editor.action.refactor"
+    },
+    {
+      "key": "/",
+      "name": "Toggle line comment",
+      "type": "command",
+      "command": "editor.action.commentLine"
+    },
+    {
+      "key": "b",
+      "name": "Toggle breakpoint",
+      "type": "command",
+      "command": "editor.debug.action.toggleBreakpoint"
     }
   ]
 }
