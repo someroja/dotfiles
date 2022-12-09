@@ -1,6 +1,7 @@
 {
-  "editor.fontFamily": "IBM Plex Mono",
-  "editor.fontSize": 18,
+  "workbench.colorTheme": "GitHub Light",
+  "editor.fontFamily": "SF Mono, IBM Plex Mono, Monaco, Cascadia Mono, Consolas, monospace",
+  "editor.fontSize": 16,
   "terminal.integrated.fontSize": 16,
   "debug.console.fontSize": 16,
   "editor.fontLigatures": false,
@@ -22,6 +23,7 @@
   "[javascript][javascriptreact][typescript][typescriptreact][html][css][scss][less][json][jsonc][graphql][markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "editor.lineNumbers": "relative",
   "vim.useSystemClipboard": true,
   "vim.leader": ",",
   "vim.insertModeKeyBindings": [
