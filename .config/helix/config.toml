@@ -1,4 +1,4 @@
-theme = "default"
+theme = "nord"
 
 [editor]
 line-number = "relative"
