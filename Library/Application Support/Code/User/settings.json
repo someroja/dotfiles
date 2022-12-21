@@ -1,6 +1,6 @@
 {
-  "workbench.colorTheme": "GitHub Light",
-  "editor.fontFamily": "SF Mono, IBM Plex Mono, Monaco, Cascadia Mono, Consolas, monospace",
+  "workbench.colorTheme": "Default Light+",
+  "editor.fontFamily": "IBM Plex Mono, SF Mono, Monaco, Cascadia Mono, Consolas, monospace",
   "editor.fontSize": 16,
   "terminal.integrated.fontSize": 16,
   "debug.console.fontSize": 16,
