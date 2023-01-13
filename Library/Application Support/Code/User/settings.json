@@ -1,6 +1,6 @@
 {
   "workbench.colorTheme": "Default Light+",
-  "editor.fontFamily": "IBM Plex Mono, SF Mono, Monaco, Cascadia Mono, Consolas, monospace",
+  "editor.fontFamily": "JetBrains Mono, monospace",
   "editor.fontSize": 16,
   "terminal.integrated.fontSize": 16,
   "debug.console.fontSize": 16,
