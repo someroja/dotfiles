@@ -1,0 +1,5 @@
+[lua]
+symbol = "lua "
+
+[nodejs]
+symbol = "nodejs "

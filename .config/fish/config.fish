@@ -17,4 +17,8 @@ else
     echo "fnm not installed!"
 end
 
-set -g async_prompt_functions _pure_prompt_git
+if type --query starship
+    starship init fish | source
+else
+    echo "starship not installed!"
+end
