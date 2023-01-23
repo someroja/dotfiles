@@ -7,6 +7,9 @@ color-modes = true
 auto-pairs = false
 shell = ["fish", "-c"]
 
+[editor.cursor-shape]
+insert = "bar"
+
 [editor.statusline]
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
