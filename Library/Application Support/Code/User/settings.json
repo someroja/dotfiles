@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Default Light+",
+  "workbench.colorTheme": "Tokyo Night",
   "editor.fontFamily": "JetBrains Mono, monospace",
   "editor.fontSize": 16,
   "terminal.integrated.fontSize": 16,
@@ -50,6 +50,12 @@
       "name": "Quick open",
       "type": "command",
       "command": "workbench.action.quickOpen"
+    },
+    {
+      "key": "b",
+      "name": "Open buffer picker",
+      "type": "command",
+      "command": "workbench.action.showAllEditors"
     },
     {
       "key": ",",
@@ -107,9 +113,9 @@
     },
     {
       "key": "r",
-      "name": "Refactor",
+      "name": "Rename symbol",
       "type": "command",
-      "command": "editor.action.refactor"
+      "command": "editor.action.rename"
     },
     {
       "key": "/",
