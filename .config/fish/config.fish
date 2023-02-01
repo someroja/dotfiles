@@ -16,9 +16,3 @@ if type --query fnm
 else
     echo "fnm not installed!"
 end
-
-if type --query starship
-    starship init fish | source
-else
-    echo "starship not installed!"
-end
