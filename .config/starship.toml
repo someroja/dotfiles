@@ -1,7 +1,0 @@
-command_timeout = 3000
-
-[lua]
-symbol = "lua "
-
-[nodejs]
-symbol = "nodejs "
