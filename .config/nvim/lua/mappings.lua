@@ -1,12 +1,15 @@
+local map = vim.keymap.set
+
+-- <Space> is the <Leader>
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-vim.keymap.set({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
+map({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
 
 -- Copy to system clipboard
-vim.keymap.set({ "n", "v" }, "<Leader>y", [["+y]])
-vim.keymap.set("n", "<Leader>yy", [["+yy]])
-vim.keymap.set("n", "<Leader>Y", [["+Y]])
+map({ "n", "v" }, "<Leader>y", [["+y]])
+map("n", "<Leader>yy", [["+yy]])
+map("n", "<Leader>Y", [["+Y]])
 
 -- Paste from system clipboard
-vim.keymap.set({ "n", "v" }, "<Leader>p", [["+p]])
-vim.keymap.set({ "n", "v" }, "<Leader>P", [["+P]])
+map({ "n", "v" }, "<Leader>p", [["+p]])
+map({ "n", "v" }, "<Leader>P", [["+P]])
