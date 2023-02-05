@@ -1,4 +1,4 @@
-status is-interactive || exit
+status is-login || exit
 
 if not functions --query fisher
     curl -sL https://git.io/fisher | source && fisher update
@@ -16,3 +16,7 @@ if type --query fnm
 else
     echo "fnm not installed!"
 end
+
+set -gx EDITOR nvim
+
+set -g hydro_multiline true
