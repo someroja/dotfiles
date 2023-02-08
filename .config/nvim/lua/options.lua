@@ -3,6 +3,9 @@ vim.api.nvim_exec("language en_US", true)
 local opt = vim.opt
 
 opt.termguicolors = true
+vim.cmd([[colorscheme habamax]])
+
+opt.laststatus = 3
 
 opt.mouse = "a"
 
@@ -13,7 +16,6 @@ opt.smartcase = true
 
 opt.number = true
 opt.relativenumber = true
-opt.signcolumn = "yes"
 opt.scrolloff = 8
 
 opt.tabstop = 4
@@ -21,8 +23,7 @@ opt.softtabstop = 4
 opt.shiftwidth = 4
 opt.expandtab = true
 opt.smartindent = true
-
-opt.completeopt = "menuone,noselect"
+opt.breakindent = true
 
 opt.swapfile = false
 opt.backup = false
