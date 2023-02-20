@@ -1,13 +1,8 @@
 [user]
 	name = Osmo Someroja
 	email = osmo@someroja.com
-[core]
-	autocrlf = false
 [init]
 	defaultBranch = main
-[push]
-	default = simple
-	followTags = true
 [alias]
 	aa = add --all
 	aliases = config --get-regexp ^alias
@@ -45,14 +40,5 @@
 	undo-last-commit = reset --soft HEAD^
 	up = !git fetch --all --tags --prune && git merge --ff-only @{u}
 	unstage = reset HEAD
-[mergetool "smerge"]
-	cmd = smerge mergetool "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"
-	trustexitcode = true
-[mergetool]
-	prompt = false
-[merge]
-	tool = smerge
-[rerere]
-	enabled = true
 [include]
 	path = ~/.gitconfig.local
