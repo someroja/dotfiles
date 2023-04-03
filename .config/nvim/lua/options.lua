@@ -3,7 +3,7 @@ vim.api.nvim_exec("language en_US", true)
 local opt = vim.opt
 
 opt.termguicolors = true
-vim.cmd([[colorscheme habamax]])
+opt.background = "dark"
 
 opt.laststatus = 3
 
