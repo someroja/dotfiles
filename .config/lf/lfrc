@@ -1,5 +1,0 @@
-set hidden true
-set ignorecase true
-set incsearch false
-set incfilter false
-set shell fish
