@@ -1,13 +1,12 @@
-# Prompt
-autoload -Uz promptinit && promptinit
-prompt pure
-
 # Completion
+fpath+=("$HOMEBREW_PREFIX/share/zsh/site-functions")
 autoload -Uz compinit && compinit
 zstyle ":completion:*" menu select
 
-# Changing directories
-setopt AUTO_CD
+# Prompt
+autoload -Uz promptinit && promptinit
+zstyle :prompt:pure:git:stash show yes
+prompt pure
 
 # History
 export SAVEHIST=10000
@@ -17,9 +16,14 @@ setopt INC_APPEND_HISTORY
 setopt HIST_FIND_NO_DUPS
 setopt HIST_IGNORE_ALL_DUPS
 
-if [ -f /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]
+# Options
+setopt AUTO_CD
+setopt NO_BEEP
+setopt EMACS
+
+if [ -f $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]
 then
-    source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+    source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 else
     echo "zsh-autosuggestions not installed!"
 fi
@@ -47,6 +51,7 @@ fi
 
 # Aliases
 alias dotfiles="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+alias df="dotfiles"
 alias vim="nvim"
 
 # Load local settings if we have them
