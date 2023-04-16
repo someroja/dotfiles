@@ -24,29 +24,21 @@ setopt EMACS
 if [ -f $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]
 then
     source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-else
-    echo "zsh-autosuggestions not installed!"
 fi
 
 if command -v fzf &> /dev/null
 then
-    [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-else
-    echo "fzf not installed!"
+    source ~/.fzf.zsh
 fi
 
 if command -v direnv &> /dev/null
 then
     eval "$(direnv hook zsh)"
-else
-    echo "direnv not installed!"
 fi
 
 if command -v fnm &> /dev/null
 then
     eval "$(fnm env --use-on-cd)"
-else
-    echo "fnm not installed!"
 fi
 
 # Aliases
