@@ -1,6 +1,6 @@
 # Completion
 fpath+=("$HOMEBREW_PREFIX/share/zsh/site-functions")
-autoload -Uz compinit && compinit
+autoload -Uz compinit && compinit -u
 zstyle ":completion:*" menu select
 
 # Prompt
