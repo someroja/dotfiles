@@ -5,3 +5,6 @@ elif [ -f /usr/local/bin/brew ]
 then
     eval "$(/usr/local/bin/brew shellenv)"
 fi
+
+# Load local settings if we have them
+[ -f ~/.zprofile.local ] && source ~/.zprofile.local

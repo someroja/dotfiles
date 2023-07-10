@@ -28,7 +28,8 @@ fi
 
 if command -v fzf &> /dev/null
 then
-    source ~/.fzf.zsh
+    source "$HOMEBREW_PREFIX/opt/fzf/shell/completion.zsh"
+    source "$HOMEBREW_PREFIX/opt/fzf/shell/key-bindings.zsh"
 fi
 
 if command -v direnv &> /dev/null
