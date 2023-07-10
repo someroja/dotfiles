@@ -3,6 +3,8 @@
 	email = osmo@someroja.com
 [init]
 	defaultBranch = main
+[push]
+	autoSetupRemote = true
 [alias]
 	aa = add --all
 	aliases = config --get-regexp ^alias
@@ -31,11 +33,13 @@
 	pl = pull
 	plr = pull --rebase
 	ps = push
+	psf = push --force-with-lease --force-if-includes
 	rb = rebase
 	rbi = rebase -i
 	remotes = remote -v
 	s = status --short --branch
-	stash-all = stash save --include-untracked
+    stash-all = stash push --include-untracked
+    stash-staged = stash push --staged
 	tags = tag -l
 	undo-last-commit = reset --soft HEAD^
 	up = !git fetch --all --tags --prune && git merge --ff-only @{u}
