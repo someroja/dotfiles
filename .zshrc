@@ -1,12 +1,9 @@
 # Completion
-fpath+=("$HOMEBREW_PREFIX/share/zsh/site-functions")
 autoload -Uz compinit && compinit -u
 zstyle ":completion:*" menu select
 
 # Prompt
 autoload -Uz promptinit && promptinit
-zstyle :prompt:pure:git:stash show yes
-prompt pure
 
 # History
 export SAVEHIST=10000
@@ -21,22 +18,6 @@ setopt AUTO_CD
 setopt NO_BEEP
 setopt EMACS
 
-if [ -f $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]
-then
-    source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-fi
-
-if command -v fzf &> /dev/null
-then
-    source "$HOMEBREW_PREFIX/opt/fzf/shell/completion.zsh"
-    source "$HOMEBREW_PREFIX/opt/fzf/shell/key-bindings.zsh"
-fi
-
-if command -v direnv &> /dev/null
-then
-    eval "$(direnv hook zsh)"
-fi
-
 if command -v fnm &> /dev/null
 then
     eval "$(fnm env --use-on-cd)"
@@ -45,7 +26,6 @@ fi
 # Aliases
 alias dotfiles="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias df="dotfiles"
-alias vim="nvim"
 
 # Load local settings if we have them
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
