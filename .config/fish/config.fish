@@ -1,5 +1,5 @@
-if type --query hx
-    set -gx EDITOR hx
+if type --query kak
+    set -gx EDITOR kak
 else
     set -gx EDITOR vim
 end
