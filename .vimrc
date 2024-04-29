@@ -1,9 +1,12 @@
 syntax enable
 colorscheme habamax
-set number
-set showcmd
+set number relativenumber
+set ruler
+set wildmenu
 
 set incsearch
 set hlsearch
 set ignorecase
 set smartcase
+
+set autoread
