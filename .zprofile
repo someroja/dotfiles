@@ -1,7 +1,4 @@
-if [ -f /opt/local/bin/port ]
-then
-    export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
-elif [ -f /opt/homebrew/bin/brew ]
+if [ -f /opt/homebrew/bin/brew ]
 then
     eval "$(/opt/homebrew/bin/brew shellenv)"
 elif [ -f /usr/local/bin/brew ]

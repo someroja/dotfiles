@@ -23,9 +23,10 @@ then
     eval "$(fnm env --use-on-cd)"
 fi
 
-# Aliases
-alias dotfiles="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
-alias df="dotfiles"
+if command -v lazygit &> /dev/null
+then
+    alias lg="lazygit"
+fi
 
 # Load local settings if we have them
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
