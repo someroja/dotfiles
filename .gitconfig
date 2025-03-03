@@ -1,50 +1,61 @@
 [user]
-	name = Osmo Someroja
-	email = osmo@someroja.com
+    name = Osmo Someroja
+    email = osmo@someroja.com
 [init]
-	defaultBranch = main
+    defaultBranch = main
+[commit]
+    verbose = true
+[tag]
+    sort = version:refname
+[fetch]
+    prune = true
+    pruneTags = true
+    all = true
 [push]
-	autoSetupRemote = true
+    autoSetupRemote = true
+    followTags = true
 [diff]
-	external = difft
+    algorithm = histogram
+    renames = true
+[merge]
+    conflictstyle = zdiff3
+[rerere]
+    enabled = true
+    autoupdate = true
 [alias]
-	aa = add --all
-	aliases = config --get-regexp ^alias
-	amend = commit --amend --no-edit
-	b = branch
-	ba = branch --all
-	bd = branch --delete
-	br = branch --remote
-	cb = checkout -b
-	ci = commit
-	clean-all = clean -fdx
-	cm = commit -m
-	cma = !git add --all && git commit -m
-	co = checkout
-	d = diff
-	dc = diff --cached
-	dh = diff HEAD
-	fixup = commit --fixup
-	fixup-apply = rebase -i --autosquash
-	history = log --follow --patch
-	l = log --oneline --decorate --graph
-	la = log --oneline --decorate --graph --all
-	lf = log --oneline --decorate --graph --numstat
-	lp = log --patch
-	mff = merge --ff-only @{u}
-	pl = pull
-	plr = pull --rebase
-	ps = push
-	psf = push --force-with-lease --force-if-includes
-	rb = rebase
-	rbi = rebase -i
-	remotes = remote -v
-	s = status --short --branch
-	stash-all = stash push --include-untracked
-	stash-staged = stash push --staged
-	tags = tag -l
-	undo-last-commit = reset --soft HEAD^
-	up = !git fetch --all --tags --prune && git merge --ff-only @{u}
-	unstage = reset HEAD
+    aa = add --all
+    aliases = config --get-regexp ^alias
+    amend = commit --amend --no-edit
+    b = branch
+    ba = branch --all
+    bd = branch --delete
+    br = branch --remote
+    cb = checkout -b
+    ci = commit
+    clean-all = clean -fdx
+    cm = commit -m
+    cma = !git add --all && git commit -m
+    co = checkout
+    d = diff
+    dc = diff --cached
+    dh = diff HEAD
+    fixup = commit --fixup
+    fixup-apply = rebase -i --autosquash
+    history = log --follow --patch
+    l = log --oneline --decorate --graph
+    la = log --oneline --decorate --graph --all
+    pl = pull
+    plr = pull --rebase
+    ps = push
+    psf = push --force-with-lease --force-if-includes
+    rb = rebase
+    rbi = rebase -i
+    remotes = remote -v
+    s = status --short --branch
+    stash-all = stash push --include-untracked
+    stash-staged = stash push --staged
+    tags = tag -l
+    undo-last-commit = reset --soft HEAD^
+    unstage = reset HEAD
 [include]
-	path = ~/.gitconfig.local
+    path = ~/.gitconfig.local
