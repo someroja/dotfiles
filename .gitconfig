@@ -57,5 +57,6 @@
     tags = tag -l
     undo-last-commit = reset --soft HEAD^
     unstage = reset HEAD
+    up = pull
 [include]
     path = ~/.gitconfig.local
