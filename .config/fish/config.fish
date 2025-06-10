@@ -1,4 +1,8 @@
-set -gx EDITOR vim
+if type --query nvim
+    set -gx EDITOR nvim
+else
+    set -gx EDITOR vim
+end
 
 if type --query lazygit
     abbr --add lg lazygit
